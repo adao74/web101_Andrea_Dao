@@ -10,8 +10,11 @@
 
 /* Hide the images by default */
 .mySlides {
-  /* display: none; */
   position: relative;   /* needed so captions & numbers (child elements) can have absolute position relative to mySlides*/
+}
+
+.hide {
+  display: none;
 }
 
 /* Next & previous buttons */
