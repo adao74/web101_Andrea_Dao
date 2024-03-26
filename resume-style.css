@@ -1,0 +1,35 @@
+body {
+    background-image: url("cupcakes.jpg");
+}
+  
+div {
+    background-color: pink;
+    width: 50%;
+
+    /* If used absolute position instead of margins, normal document flow won't apply to this element */
+    margin: 5% 25% 5% 25%;
+    padding: 0.5% 0 0.5% 0;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+#left {
+    height: 2000px;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: 16% 5% 16% 5% 16% 5% 16% 5% 16%;
+}
+
+#right {
+    height: 2000px;
+    background-color: orange;
+
+    display: grid;
+    grid-template-rows: 4fr 2fr 2fr 2fr;
+}
+
