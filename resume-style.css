@@ -17,7 +17,7 @@ body > header {
 }
   
 header > div {
-    background-color: pink;
+    background-color: #d5a6bd;
     width: 50%;
     height: 70%;
     position: absolute;
@@ -47,8 +47,8 @@ h1 {
 /* left column */
 
 .left {
-    background-color: turquoise;
-    color: white;
+    background-color: #f4cccc;
+    color: #721643;
 
     display: grid;
     grid-template-rows: 16% 7% 14% 7% 14% 7% 14% 7% 14%;
@@ -60,10 +60,11 @@ img {
 }
 
 .left h1 {
-    border-top: black solid 2pt;
-    border-bottom: black solid 2pt;
+    border-top: #721643 solid 2pt;
+    border-bottom: #721643 solid 2pt;
     
-    background-color: yellow;
+    background-color: #c76a7a;
+    color: white;
 }
 
 .left p {
@@ -86,7 +87,8 @@ img {
 /* Right column */
 
 .right {
-    background-color: orange;
+    background-color: #d2d4f1;
+    color: #262e89;
 
     display: grid;
     grid-template-rows: 5% 30% 5% 20% 5% 10% 5% 20%;
@@ -128,18 +130,21 @@ article:nth-of-type(1) p {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.references * {
+    text-align: left;
+}
 
 .references div {
     margin: 50px 0;
 }
 
 .references div:nth-of-type(2) {
-    border-right: 5px black solid;
-    border-left: 5px black solid;
+    border-right: 5px #c76a7a solid;
+    border-left: 5px #c76a7a solid;
 }
 
 .references div > * {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .references h3 {
