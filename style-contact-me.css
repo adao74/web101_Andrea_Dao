@@ -1,0 +1,23 @@
+/* Phone */
+
+* {
+    color: pink;
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+* {
+    color: blue;
+}
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+* {
+    color: black;
+}
+
+}
