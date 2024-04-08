@@ -1,23 +1,70 @@
 /* Phone */
 
-* {
-    color: pink;
+form {
+    display: grid;
+
+    row-gap: 20pt;
+    column-gap: 20pt;
+    padding: 10pt;
+}
+
+form > div {
+    background-color: peachpuff;
+    border: 5pt solid #E6E6FA;
+}
+
+form > div:nth-child(even) {
+    background-color: pink;
+    border: 5pt solid #FFE5B4;
+}
+
+[type="reset"] {
+    background-color: #CC9791;
+    height: 50pt;
+    width: 150px;
+    margin: auto;
+}
+
+[type="submit"] {
+    background-color: lightblue;
+    height: 50pt;
+    width: 150px;
+    margin: auto;
 }
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
 
-* {
-    color: blue;
-}
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    [type="reset"] {
+        grid-row: 9/span 1;
+    }
+
+    [type="submit"] {
+        grid-row: 9/span 1;
+        grid-column: 2/span 1;
+    }
 
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
 
-* {
-    color: black;
-}
+    form {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    [type="reset"] {
+        grid-row: -1/span 1;
+    }
+
+    [type="submit"] {
+        grid-row: -1/span 1;
+        grid-column: 2/span 1;
+    }
 
 }

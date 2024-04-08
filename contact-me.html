@@ -9,115 +9,145 @@
 <body>
     <!-- When you do a GET request in the browser, the page (results.html) renders -->
     <form action="results.html" method="GET" enctype="multipart/form-data">
+      
+      <!-- To associate a label with an input, the "for" attribute must match the "id" attribute  -->
+
+      <!-- Inputs that are 1) text 2) email 3) number 4) date -->
       <div>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
       </div>
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
-      </div>
-    </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
       </div>
       <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="200" step="5">
       </div>
       <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <label for="date">Birthdate</label>
+        <input type="date" name="date" id="date" min="2019-06-10">
       </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio" placeholder="comments" maxlength="500" minlength="20"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <div>
-      How did you hear about me?
+
+      <!-- Inputs that are checkboxes -->
       <div>
-        <label for="classmate">Classmate</label>
-        <input type="checkbox" name="classmate" id="classmate">
+        Favorite Food
+        <div>
+          <label for="banana">Banana</label>
+          <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+          <label for="apple">Apple</label>
+          <input type="checkbox" name="apple" id="apple">
+        </div>
       </div>
+
+      <!-- Inputs that are radio buttons: must use same "name" attribute so that users can only choose one radiobutton option -->
       <div>
-        <label for="resume">Resume Submission</label>
-        <input type="checkbox" name="resume" id="resume">
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+          <label for="other">Other</label>
+          <input type="radio" name="gender" id="other" value="other">
+        </div>
       </div>
+
+      <!-- Inputs that are "select options": use select element instead -->
       <div>
-        <label for="linkedin">LinkedIn</label>
-        <input type="checkbox" name="linkedin" id="linkedin">
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" id="eyeColor" multiple>
+          <option value="Green">Green</option>
+          <option label="Red" value="Red"></option>
+        </select>
       </div>
+
+      <!-- Inputs that are multiline text fields: use textarea element-->
       <div>
-        <label for="academy">Coding Academy Rec</label>
-        <input type="checkbox" name="academy" id="academy">
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" placeholder="comments" maxlength="500" minlength="20"></textarea>
       </div>
-    </div>
-    <div>
-      Do you want to be contacted back?
+
+      <!-- ? -->
+      <!-- <input type="hidden" name="hidden" value="hi"> -->
+
+      <!-- Inputs that are file upload -->
       <div>
-        <label for="yes">Yes</label>
-        <input type="radio" name="contacted" id="yes" value="yes">
+        <label for="file">File</label>
+        <input id="file" type="file" name="file">
       </div>
+
+      <!-- Inputs that are phone numbers -->
       <div>
-        <label for="no">No</label>
-        <input type="radio" name="contacted" id="no" value="no">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
       </div>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
+
+      <!-- Inputs that are URLs -->
+      <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+      </div>
+
+      <!-- Inputs that are color pickers -->
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+      </div>
+
+      <!-- Inputs that are passwords -->
+      <div>
+        <label>
+          Password
+          <input type="password" name="password" >
+        </label>
+      </div>
+
+      <!-- Another checkbox input -->
+      <div>
+        How did you hear about me?
+        <div>
+          <label for="classmate">Classmate</label>
+          <input type="checkbox" name="classmate" id="classmate">
+        </div>
+        <div>
+          <label for="resume">Resume Submission</label>
+          <input type="checkbox" name="resume" id="resume">
+        </div>
+        <div>
+          <label for="linkedin">LinkedIn</label>
+          <input type="checkbox" name="linkedin" id="linkedin">
+        </div>
+        <div>
+          <label for="academy">Coding Academy Rec</label>
+          <input type="checkbox" name="academy" id="academy">
+        </div>
+      </div>
+
+      <!-- Another radio button input -->
+      <div>
+        Do you want to be contacted back?
+        <div>
+          <label for="yes">Yes</label>
+          <input type="radio" name="contacted" id="yes" value="yes">
+        </div>
+        <div>
+          <label for="no">No</label>
+          <input type="radio" name="contacted" id="no" value="no">
+        </div>
+      </div>
+
+      <!-- Inputs that are buttons: use button element -->
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
   <!-- <script src="scripts.js"></script> -->
 </body>
 </html>
